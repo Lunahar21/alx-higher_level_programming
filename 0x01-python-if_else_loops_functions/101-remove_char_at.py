@@ -1,9 +1,6 @@
 #!/usr/bin/python3
 def remove_char_at(str, n):
-    newstr = ""
-    for i in range(len(str)):
-        if i == n:
-            continue
-        else:
-            newstr += str[t]
-        return newstr
+    """Creates a copy of the string without the character at the position n."""
+    if n < 0:
+        return (str)
+    return (str[:n] + str[n+1:1])
