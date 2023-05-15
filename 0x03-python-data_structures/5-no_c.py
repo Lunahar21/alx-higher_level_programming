@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def no_c(my_string):
-    new = ""
-    for i in my_string:
-        if i is not 'C' and  i is not 'c':
-            new += i
-        return new
+    new_str = my_string.translate({order('c') : None})
+    new_str = my_string.translate({order('C') : None})
+    return new_str
+
+print(no_c("The letter comes nothing"))
